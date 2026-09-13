@@ -21,6 +21,11 @@
 .nav-items {
   display: flex;
   gap: 40px;
+  font-size: 15.5px;
+}
+.nav-items a:hover {
+  transition: all 0.3s ease;
+  scale: 1.05;
 }
 .right {
   flex: 2;
@@ -29,7 +34,8 @@
   justify-content: flex-end;
   gap: 20px;
 }
-.logIn button {
+.logIn button,
+.signUp button {
   cursor: pointer;
   font-weight: bold;
   padding: 5px;
@@ -37,4 +43,9 @@
   background-color: #007bff;
   color: white;
   border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.logIn button:hover,
+.signUp button:hover {
+  scale: 1.05;
 }
