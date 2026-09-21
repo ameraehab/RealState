@@ -1,9 +1,30 @@
 import "./homePage.css";
+import Search from "../../search";
 function HomePage() {
   return (
     <div className="home-layout">
-      <div className="textContent"></div>
-      <div className="pagenationContent"></div>
+      <img src="public/images/heroImage.jpg" alt="Description" />
+      <div className="textContent">
+        <h1 className="heading">Find Real Estate & Get Your Dream Place</h1>
+        <p className="description">
+          Discover the perfect property that matches your lifestyle and budget.
+        </p>
+        <Search />
+        <div className="box">
+          <div className="box1">
+            <h1>16+</h1>
+            <p>Years of Experience</p>
+          </div>
+          <div className="box2">
+            <h1>200</h1>
+            <p>Award Gained</p>
+          </div>
+          <div className="box3">
+            <h1>1200+</h1>
+            <p>Property Ready</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
