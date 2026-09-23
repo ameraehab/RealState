@@ -10,16 +10,16 @@ function HomePage() {
           Discover the perfect property that matches your lifestyle and budget.
         </p>
         <Search />
-        <div className="box">
-          <div className="box1">
+        <div className="main-box">
+          <div className="box">
             <h1>16+</h1>
             <p>Years of Experience</p>
           </div>
-          <div className="box2">
+          <div className="box">
             <h1>200</h1>
             <p>Award Gained</p>
           </div>
-          <div className="box3">
+          <div className="box">
             <h1>1200+</h1>
             <p>Property Ready</p>
           </div>

@@ -52,3 +52,10 @@ form button .icon-search {
   transform: translate(-50%, -50%);
   font-size: medium;
 }
+@media (max-width: 738px) {
+  .search-box {
+    position: relative;
+    right: 5%;
+    margin-top: 80px;
+  }
+}

@@ -14,7 +14,6 @@
   object-fit: cover;
 }
 
-/* الطبقة الشفافة */
 .home-layout::before {
   content: "";
   position: absolute;
@@ -26,7 +25,7 @@
   position: absolute;
   top: 30%;
   left: 10%;
-  color: white;
+  color: rgb(249, 252, 255);
   z-index: 1;
 }
 .heading {
@@ -39,7 +38,44 @@
   font-size: 15px;
   left: 3%;
 }
-.box {
+.main-box {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+}
+.main-box .box {
+  color: rgb(249, 252, 255);
+  text-align: center;
+}
+.main-box .box h1 {
+  font-size: 30px;
+}
+
+.main-box .box p {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+@media (max-width: 738px) {
+  .heading {
+    font-size: 28px;
+    width: 400px;
+  }
+  .description {
+    font-size: 16px;
+    width: 350px;
+  }
+  .main-box {
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: 50px;
+  }
+
+  .main-box .box h1 {
+    font-size: 20px;
+  }
+
+  .main-box .box p {
+    font-size: 13px;
+  }
 }
