@@ -1,4 +1,5 @@
 import "./homePage.css";
+
 import Search from "../../search";
 function HomePage() {
   return (

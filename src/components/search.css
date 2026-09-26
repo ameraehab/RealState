@@ -1,50 +1,67 @@
+@import "/src/mainLayout.css";
+
 .search-box {
   margin-top: 60px;
+  width: 625px;
+  max-width: 100%;
 }
 
 .type {
   display: flex;
 }
+
 .type button {
   padding: 10px;
   width: 70px;
   height: 40px;
-  border-radius: 0;
+  border-radius: 3px;
   border: 0px solid rgb(90, 89, 89);
   background-color: rgb(249, 252, 255);
   font-size: small;
   font-weight: 600;
   cursor: pointer;
 }
+
 .type .selected {
   color: white;
   background-color: black;
 }
+
 form {
   display: flex;
   align-items: center;
   border: 1px solid rgb(253, 253, 253);
   height: 50px;
   background-color: rgb(249, 252, 255);
-  width: fit-content;
+
+  width: 100%;
+
+  box-sizing: border-box;
 }
+
 form .location,
-.min-price,
-.max-price,
-button {
+form .min-price,
+form .max-price,
+form button {
   border: none;
   outline: none;
   height: 100%;
   padding-left: 10px;
+  width: 35%;
+
+  box-sizing: border-box;
 }
+
 form button {
   background-color: #064d98;
   color: white;
-  width: 50px;
   position: relative;
-  margin-left: 10px;
+
+  margin-left: 0;
+
   cursor: pointer;
 }
+
 form button .icon-search {
   position: absolute;
   top: 50%;
@@ -52,10 +69,43 @@ form button .icon-search {
   transform: translate(-50%, -50%);
   font-size: medium;
 }
+
 @media (max-width: 738px) {
+  /* CHANGED */
   .search-box {
-    position: relative;
-    right: 5%;
-    margin-top: 80px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+  }
+
+  form .location,
+  form .min-price,
+  form .max-price {
+    width: 100%;
+    height: 50px;
+    padding: 13px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid rgb(160, 160, 160);
+  }
+
+  form button {
+    width: 100%;
+    height: 50px;
+
+    margin-left: 0;
+
+    right: auto;
+
+    padding: 0;
+
+    box-sizing: border-box;
   }
 }
