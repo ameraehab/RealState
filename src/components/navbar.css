@@ -53,6 +53,7 @@
   width: 75px;
   height: 33px;
   text-align: center;
+  display: inline;
 }
 .logIn:hover,
 .signUp:hover {
@@ -94,7 +95,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #064d98;
+    background-color: #064d98c5;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -105,9 +106,11 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0px 2px 14px rgba(108, 108, 108, 0.582);
+    z-index: 100;
   }
   .logIn,
   .signUp {
     font-size: 12px;
+    display: none;
   }
 }
