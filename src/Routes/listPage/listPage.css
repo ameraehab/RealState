@@ -1,0 +1,9 @@
+.Page-layout {
+  display: flex;
+}
+.listContainer {
+  flex: 3;
+}
+.mapContainer {
+  flex: 2;
+}

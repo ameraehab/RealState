@@ -1,6 +1,6 @@
 import "./homePage.css";
 
-import Search from "../../search";
+import Search from "../../components/search/search.jsx";
 function HomePage() {
   return (
     <div className="home-layout">
