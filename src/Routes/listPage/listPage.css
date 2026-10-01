@@ -4,6 +4,10 @@
 .listContainer {
   flex: 3;
 }
+.wrapper {
+  height: 440px;
+  overflow-y: scroll;
+}
 .mapContainer {
   flex: 2;
 }
