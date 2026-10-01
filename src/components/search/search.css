@@ -54,9 +54,7 @@ form button {
   background-color: #064d98;
   color: white;
   position: relative;
-
   margin-left: 0;
-
   cursor: pointer;
 }
 
@@ -69,7 +67,6 @@ form button .icon-search {
 }
 
 @media (max-width: 738px) {
-  /* CHANGED */
   .search-box {
     width: 100%;
     margin-top: 20px;
@@ -97,13 +94,9 @@ form button .icon-search {
   form button {
     width: 100%;
     height: 50px;
-
     margin-left: 0;
-
     right: auto;
-
     padding: 0;
-
     box-sizing: border-box;
   }
 }
